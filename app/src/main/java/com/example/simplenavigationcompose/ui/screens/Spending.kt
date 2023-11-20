@@ -70,6 +70,8 @@ fun SpendingScreen(
             text = "Home",
             onClick = popUpToHome
         )
+        Spacer(modifier = Modifier.height(10.dp))
+
     }
 }
 

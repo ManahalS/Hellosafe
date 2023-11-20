@@ -43,25 +43,25 @@ fun SeriousScreen(
 
         DefaultButton(
             text = "Messages invoking self harm and suicide",
-            onClick = { navigateToExploitation(1,true)}
-        )
-        Spacer(modifier = Modifier.height(10.dp))
-
-        DefaultButton(
-            text = "Online sexual exploitation and abuse",
             onClick = { navigateToMessages(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
         DefaultButton(
+            text = "Online sexual exploitation and abuse",
+            onClick = { navigateToExploitation(1,true)}
+        )
+        Spacer(modifier = Modifier.height(10.dp))
+
+        DefaultButton(
             text = "Violent content",
-            onClick = { navigateToRecruitment(1,true)}
+            onClick = { navigateToViolent(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
         DefaultButton(
             text = "Recruitment by extremist and terrorist groups",
-            onClick = { navigateToViolent(1,true)}
+            onClick = { navigateToRecruitment(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 

@@ -102,6 +102,14 @@ fun HomeScreen(
         )
         Spacer(modifier = Modifier.height(10.dp))
 
+        MassiveButton(
+            text = "If you have any queries, Childline is available 24/7 at: 0800 1111.  For urgent matters, please contact the authorities. ",
+            onClick = {}
+        )
+        Spacer(modifier = Modifier.height(10.dp))
+
+
+
     }
 }
 
