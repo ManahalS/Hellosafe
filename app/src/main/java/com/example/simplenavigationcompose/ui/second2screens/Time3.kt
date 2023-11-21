@@ -33,11 +33,13 @@ fun Time3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("what are some examples of giving in to peer pressure online?", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How can I reduce my child's screen time?", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("The changing nature of social norms online and children's increased need to feel part of the group can push them to take risks online that they otherwise wouldn’t. This could be feeling pressured to take part in a prank and posting it on social media for all to see, sending a nude to someone they may like, to show they’re really interested, taking part in cyberbullying or sexting. As well as this, young people may actively chase likes and followers to prove to others that they are popular and well-liked without a clear understanding of how this might put them at risk.\n", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("To reduce screen time in family, create a phone-free zone in meal areas, place devices away or at a charging station when not in use so they don't distract anyone, and spend time with kids after school or work to build deeper emotional connections. If kids spend a lot of time on screens, set smaller, attainable goals and cut their screen time in half. Set expectations with your kids and create intentional goals to reduce screen time. Many devices have time limits for use, making it easier to manage screen time.", fontSize = 35.sp, textAlign = TextAlign.Center)
 
+        Spacer(modifier = Modifier.height(20.dp))
+        Text("You could also do things such as deleting apps, going greyscale, turning off notifications (highly encouraged), creating device free areas, or even encouraging your child to pursue screen-free activities.",fontSize=20.sp,textAlign=TextAlign.Center)
 
         BackButton(
             text = "Back",

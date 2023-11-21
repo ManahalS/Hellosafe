@@ -33,7 +33,7 @@ fun Cyberbullying4Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how to confront a child you may suspect is being cyberbullied", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How to confront a child you may suspect is being cyberbullied", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("1. Keep devices in communal areas.\n" +
@@ -43,7 +43,7 @@ fun Cyberbullying4Screen(
                 "Rather than coming across as a frustrated parent eager to get this conversation over with, talk to your child gently. Bring up the conversation gently, at a time when they seem more unburdened. Ask them what they know about cyberbullying, and what the possible consequences of cyberbullying are. If they don't mention anything about their own situation, keep going gently, mentioning that you've been worried about them recently. If they still refuse to cooperate, don't push it as this will make your child trust you less. Simply distract their attention and try another time.\n" +
                 "\n" +
                 "3. Communication is key.\n" +
-                "Once your child opens up about the bullying, engage your child in conversation about what is going on in a calm manner. Refrain from freaking out, and take the time to learn exactly what happened, as well as the context in which it occurred. Don't try to play devil's advocate and don’t try to downplay the situation,", fontSize =35.sp, textAlign = TextAlign.Center)
+                "Once your child opens up about the bullying, engage your child in conversation about what is going on in a calm manner. Refrain from freaking out, and take the time to learn exactly what happened, as well as the context in which it occurred. Don't try to play devil's advocate and don’t try to downplay the situation,", fontSize =20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

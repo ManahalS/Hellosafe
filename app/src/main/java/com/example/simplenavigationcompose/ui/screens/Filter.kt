@@ -38,10 +38,10 @@ fun FilterScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Setting content filters", fontSize = 60.sp)
+        Text("CONTENT FILTERS", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
-        Text( "Content filters limit access to age inappropriate content. Usage controls constrain the usage of devices such as placing time-limits or forbidding certain types of usage. Software can be downloaded on a child's device to perform a range of different functions. Monitoring (usually a software or app) can track location and activity when a child is using a device. Many types of app combine all of these aspects into all-encompassing content filters and trackers", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text( "Content filters limit access to age inappropriate content. Usage controls constrain the usage of devices such as placing time-limits or forbidding certain types of usage. Software can be downloaded on a child's device to perform a range of different functions. Monitoring (usually a software or app) can track location and activity when a child is using a device. Many types of app combine all of these aspects into all-encompassing content filters and trackers", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
 

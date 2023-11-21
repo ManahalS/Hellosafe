@@ -33,9 +33,9 @@ fun Disinformation2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("disinformation", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How to avoid and spot fake news:", fontSize = 40.sp, textAlign = TextAlign.Center)
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(10.dp))
         Text("If you haven't seen the story somewhere else it could be fake and made up. Other places you could look out for this news is outlets that you trust such as: the radio, tv news channels and newspapers. \n" +
                 "\n" +
                 "Make sure to check where the information is from, the source. If you have never heard of the website, then it could be fake. Some websites might be copycat websites and try and look like other websites with very similar URLs. The end of the URL is also important, most websites will have '.co.uk' or '.com' at the end. Fake websites could have variations on this such as 'com.co'. \n" +
@@ -50,8 +50,7 @@ fun Disinformation2Screen(
                 "\n" +
                 " \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
-
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         BackButton(
             text = "Back",

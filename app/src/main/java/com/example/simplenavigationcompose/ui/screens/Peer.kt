@@ -37,7 +37,7 @@ fun PeerScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Peer Pressure", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("PEER PRESSURE", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
         Text("Peer pressure is when you \"feel like you have to do something because people around you want you to or expect you to.\" {Childline).  \n" +
@@ -46,7 +46,7 @@ fun PeerScreen(
                 "\n" +
                 "Teenagers and tweens are especially vulnerable to peer pressure as they think that it will make them \"more popular\" or fit in more. Make sure to explain to your child that they should be their true and aithentic self and shouldn't have to change to fit in. \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
 

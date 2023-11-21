@@ -33,10 +33,10 @@ fun Recruitment4Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how can you stop the spread of extremist ideologies", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How can you stop the spread of extremist ideologies", fontSize = 60.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("the main way to stop the spread of extremist ideologies is by reporting all posts with extremist viewpoints, and blocking and reporting all accounts messaging, commenting or posting about terrorist or extremist ideas. Never let your child browse the web on potentially unsafe websites that could redirect them to terrorist recruitment websites - the best way to ensure this is by using content filters (see our section on [content filters])", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("The main way to stop the spread of extremist ideologies is by reporting all posts with extremist viewpoints, and blocking and reporting all accounts messaging, commenting or posting about terrorist or extremist ideas. Never let your child browse the web on potentially unsafe websites that could redirect them to terrorist recruitment websites - the best way to ensure this is by using content filters (see our section on [content filters])", fontSize = 35.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

@@ -38,34 +38,34 @@ fun ProfileScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Cyberbullying", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("CYBERBULLYING", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
 
-        Text("Cyberbullying is repeated behavior (designed to anger, hurt, scare or shame a target) that takes place on any form of digital technology. It can take place on social media, gaming apps and messaging apps.", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("Cyberbullying is repeated behavior (designed to anger, hurt, scare or shame a target) that takes place on any form of digital technology. It can take place on social media, gaming apps and messaging apps.", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
 
         BigButton(
-            text = "what are the most common examples of cyberbullying?",
+            text = "What are the most common examples of cyberbullying?",
             onClick = { navigateToCyberbullying2(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
         BigButton(
-            text = "how to spot the signs of your child being cyberbullied",
+            text = "How to spot the signs of your child being cyberbullied",
             onClick = { navigateToCyberbullying3(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
         BigButton(
-            text = "how to confront a child you may suspect is being cyberbullied",
+            text = "How to confront a child you may suspect is being cyberbullied",
             onClick = { navigateToCyberbullying4(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
         BigButton(
-            text = "how to help a cyberbullied child",
+            text = "How to help a cyberbullied child",
             onClick = { navigateToCyberbullying5(1,true)}
         )
 

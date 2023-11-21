@@ -35,7 +35,7 @@ fun SearchScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Online friendships and relationships", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("ONLINE FRIENDSHIPS AND RELATIONSHIPS", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("In today's world, staying in touch with friends both old and new is super easy, due to messaging apps and social medias which can connect people across the globe. This is fantastic, and an extremely useful tool for humanity to possess. A side effect of this means that you can connect with people you've never met before, through apps like Snapchat that have a 'quick add' feature to add people you have mutual friends with - or none at all! \n" +
@@ -46,7 +46,7 @@ fun SearchScreen(
                 "\n" +
                 "It is important to note not everyone on the internet is out to harm your child, and there are other children like your child who want to make friends, and find it easier to do this online. Many online friendships are real, safe and strong, connecting over thousands of kilometres away, but it is very tricky to know if your child is in an online friendship vs a real-life friendship, where if anything happens you can contact the school, or parents, of said child. \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
         Spacer(modifier = Modifier.height(20.dp))
 
         BigButton(

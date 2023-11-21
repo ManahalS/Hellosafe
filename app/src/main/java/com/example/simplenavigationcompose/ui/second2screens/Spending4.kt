@@ -33,10 +33,10 @@ fun Spending4Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("money", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Money", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text(" be", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("Be", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

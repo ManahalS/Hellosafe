@@ -33,7 +33,7 @@ fun Footprint3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Reduce your digital footprint", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Reduce your digital footprint", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("You can reduce your digital footprint by: \n" +
@@ -48,7 +48,7 @@ fun Footprint3Screen(
                 "\n" +
                 " \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

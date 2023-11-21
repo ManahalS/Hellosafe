@@ -33,10 +33,10 @@ fun Friendships3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("what to do if your child is chatting to a stranger", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("What to do if your child is chatting to a stranger", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("If you suspect your child is engaged with a stranger online, you can check their devices and chats for users you do not recognise, and talk to them about it. It is important to not approach with anger as your child may not understand what is happening and see the risks, and instead explain the negative consequences so they understand. If you see behaviour that is alarming, such as NSFW pictures, or suicidal messages, contact the authorities, your school, or other relevant figures. You can ban apps for young children that have unlimited messaging potential, and when they grow older, monitor this occasionally. You should not invade their privacy, and only check with suspicion something may be occurring. Set up filters for certain content, and check to make sure the people your child are talking to are appropriate, and that the topics of discussion are appropriate too.", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("If you suspect your child is engaged with a stranger online, you can check their devices and chats for users you do not recognise, and talk to them about it. It is important to not approach with anger as your child may not understand what is happening and see the risks, and instead explain the negative consequences so they understand. If you see behaviour that is alarming, such as NSFW pictures, or suicidal messages, contact the authorities, your school, or other relevant figures. You can ban apps for young children that have unlimited messaging potential, and when they grow older, monitor this occasionally. You should not invade their privacy, and only check with suspicion something may be occurring. Set up filters for certain content, and check to make sure the people your child are talking to are appropriate, and that the topics of discussion are appropriate too.", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

@@ -35,15 +35,15 @@ fun MessagesScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("messages invoking self harm and suicide", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Messages invoking self harm and suicide", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("If your child is receiving any form of online harassment, this is cyberbullying. Refer to our advice about cyberbullying.\n" +
                 "\n" +
-                "However, if your child receives message invoking self harm or suicide, report the message immediately. If necessary, report it to the authorities, especially if your child seems as though they are at risk of receiving further comments. But first and foremost, check in on your child. Such words can be harmful, and talking through it with your child can be beneficial as they will be much more upset than you think.", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "However, if your child receives message invoking self harm or suicide, report the message immediately. If necessary, report it to the authorities, especially if your child seems as though they are at risk of receiving further comments. But first and foremost, check in on your child. Such words can be harmful, and talking through it with your child can be beneficial as they will be much more upset than you think.", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         BigButton(
-            text = "what to do if your child needs help in these situations",
+            text = "What to do if your child needs help in these situations",
             onClick = { navigateToMessages2(1,true)}
         )
 

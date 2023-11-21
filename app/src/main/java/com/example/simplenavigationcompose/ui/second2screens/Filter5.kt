@@ -33,12 +33,12 @@ fun Filter5Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Pre-prepared search engines for children", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Pre-prepared search engines for children", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Some search engines offer filters that are oriented towards kids. These providers' search results are pre-filtered to guarantee that they are appropriate for children. Such content filters are advantageous because they can allow your children to browse the internet without supervision while keeping them away from websites known to contain harmful or unsuitable information. \n" +
                 "\n" +
-                "Pre-prepared search engines for children, such as Kiddle and Wackysafe, are specialised search engine filters and target their firewalls at blocking content that is not appropriate for children. ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "Pre-prepared search engines for children, such as Kiddle and Wackysafe, are specialised search engine filters and target their firewalls at blocking content that is not appropriate for children. ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

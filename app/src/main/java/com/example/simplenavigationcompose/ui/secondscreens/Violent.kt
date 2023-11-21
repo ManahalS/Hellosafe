@@ -36,20 +36,20 @@ fun ViolentScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("violent content", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Violent content", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Wherever children and young people can view or share content, there is a risk that they will see something distressing or worrying.\n" +
                 "\n" +
-                "Many apps and sites have moderators in place to help remove content, however some don’t.\n", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "Many apps and sites have moderators in place to help remove content, however some don’t.\n", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         DefaultButton(
-            text = "how to prevent your children from seeing violent content",
+            text = "How to prevent your children from seeing violent content",
             onClick = { navigateToViolent2(1,true)}
         )
 
-        DefaultButton(
-            text = "what to do if your child has seen potentially upsetting violent content",
+        BigButton(
+            text = "What to do if your child has seen potentially upsetting violent content",
             onClick = { navigateToViolent3(1,true)}
         )
 

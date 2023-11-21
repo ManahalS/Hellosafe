@@ -36,15 +36,23 @@ fun DisinformationScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Disinformation and Fake news", fontSize = 50.sp, textAlign = TextAlign.Center)
+        Text("DISINFORMATION AND FAKE NEWS", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
-        Text("Fake news is news or stories which are on the internet which are not true", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("Fake news is news or stories which are on the internet which are not true", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
         Text("Fake news is everywhere and children especially are very vulnerable to believing this news. \n" +
                 "\n" +
-                "The first thing to explain to your child is that not everything that they read online is true", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "The first thing to explain to your child is that not everything that they read online is true", fontSize = 20.sp, textAlign = TextAlign.Center)
+
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("There are two types of fake news:\n" +
+                "\n" +
+                "1. Fake news that is deliberately published to make people believe untrue things.\n" +
+                "\n" +
+                "2.News and stories that may be partly true but some of the information might be exaggerated or untrue.",fontSize=20.sp,textAlign=TextAlign.Left)
+
         Spacer(modifier = Modifier.height(20.dp))
 
         DefaultButton(

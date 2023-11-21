@@ -33,10 +33,10 @@ fun Time2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("what are some examples of giving in to peer pressure online?", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("What are the dangers of high screen times", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("The changing nature of social norms online and children's increased need to feel part of the group can push them to take risks online that they otherwise wouldn’t. This could be feeling pressured to take part in a prank and posting it on social media for all to see, sending a nude to someone they may like, to show they’re really interested, taking part in cyberbullying or sexting. As well as this, young people may actively chase likes and followers to prove to others that they are popular and well-liked without a clear understanding of how this might put them at risk.\n", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("In recent years, more and more time has been spent in front of screens. The typical adult today spends close to six hours or more every day in front of screens on various devices. This indicates that we are currently using screens for longer than we sleep. Additionally, the figures for teenagers are even higher - between 7 to 10 hours a day on screens! Even though education in a lot of schools has been switched to an online medium, this figure is horrifying. Too much screen time puts everyone at risk of obesity, and it's linked with sleep disturbances and can affect relationships. For kids, especially teens, there are studies concerning the negative effects of screen time and its relationship to anxiety, depression and attention span.\n",fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

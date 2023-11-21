@@ -37,11 +37,13 @@ fun TimeScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Screen Time", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("SCREEN TIME", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
-        Text("What is screen time?" +
-                "Screen time is a term used for activities done in front of a screen, such as watching TV, working on a computer, or playing video games", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("What is screen time?", fontSize = 25.sp, textAlign = TextAlign.Center)
+
+        Spacer(modifier = Modifier.height(5.dp))
+        Text("Screen time is a term used for activities done in front of a screen, such as watching TV, working on a computer, or playing video games", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
 
@@ -58,7 +60,7 @@ fun TimeScreen(
         Spacer(modifier = Modifier.height(10.dp))
 
         BigButton(
-            text = "How can i monitor my child's screen time",
+            text = "How can I monitor my child's screen time",
             onClick = { navigateToTime4(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))

@@ -33,7 +33,7 @@ fun Recruitment2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how can an individual be exposed to extremist or terrorist ideologies", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How can an individual be exposed to extremist or terrorist ideologies", fontSize = 60.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Terrorist organizations often face challenges due to the illegal nature of their content and membership. Encryption can provide high levels of secrecy, but it limits outreach to recruits and sympathizers. Access to extremist materials online can be widespread, but digital files leave traces on individuals' devices, making downloading certain materials potentially lead to detection and prosecution. As a result, terrorist groups have shown adaptability and flexibility in their use of online services and platforms. A common strategy to overcome restrictions is using entry points on mainstream sites to guide interested individuals to other digital locations, such as encrypted services or dedicated websites. \n" +

@@ -33,7 +33,7 @@ fun Messages2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("what to do if your child needs help in these situations", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("What to do if your child needs help in these situations", fontSize = 60.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("After receiving messages telling them to hurt themselves, your child might be destroyed emotionally and lash out not on others, but themselves. Here are the things to look out for in your child after receiving such messages: therapy can be extremely beneficial as it can help your child talk through any deep-set issues that have upset them. \n" +

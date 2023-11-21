@@ -33,20 +33,20 @@ fun Cyberbullying2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("what are the most common examples of cyberbullying?", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("What are the most common examples of cyberbullying?", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("some of the most common examples of cyberbullying include (but are not limited to):\n" +
+        Text("Some of the most common examples of cyberbullying include (but are not limited to):\n" +
                 "\n" +
-                "spreading lies about someone\n" +
+                "Spreading lies about someone\n" +
                 "\n" +
-                "posting embarrassing or inappropriate photos of someone online with the intent to hurt them\n" +
+                "Posting embarrassing or inappropriate photos of someone online with the intent to hurt them\n" +
                 "\n" +
-                "sending hurtful, abusive or threatening messages, images or videos\n" +
+                "Sending hurtful, abusive or threatening messages, images or videos\n" +
                 "\n" +
-                "sending mean messages to others through fake accounts or by impersonating someone\n" +
+                "Sending mean messages to others through fake accounts or by impersonating someone\n" +
                 "\n" +
-                "posting or revealing someone's personal information online\n", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "Posting or revealing someone's personal information online\n", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

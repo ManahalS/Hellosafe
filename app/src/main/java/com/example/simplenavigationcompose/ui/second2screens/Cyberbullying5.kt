@@ -33,7 +33,7 @@ fun Cyberbullying5Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how to help a cyberbullied child", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How to help a cyberbullied child", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("These tips can be applied to children being bullied in real life too!\n" +
@@ -72,7 +72,7 @@ fun Cyberbullying5Screen(
                 "Especially for younger children, enforcing rules can be difficult. Therefore, consider writing smartphone and social media contracts for your kids that you're willing to enforce. Make sticker charts for daily mobile usage and for every day ignoring the bullies, add a sticker. At the end of a successful week, consider giving your child a reward.\n" +
                 "\n" +
                 "10. Consider monitoring your child's online presence and social media usage.\n" +
-                "Another alternative to limiting screen time usage is using parental control tools that can allow you to monitor your children's communications and online activities - but be careful with these as if your child finds out, they may see it as an infringement of their privacy and find ways to circumvent these. If this seems too invasive, follow your child on social media. This allows you to monitor activity and see who your child is friends with without actively going into your child's social media accounts. More significantly, you may verify that your child's account is private and that their profiles do not reveal personal information. While you won't know if your child is receiving malicious messages privately, you will be able to observe how others are interacting with your child online", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "Another alternative to limiting screen time usage is using parental control tools that can allow you to monitor your children's communications and online activities - but be careful with these as if your child finds out, they may see it as an infringement of their privacy and find ways to circumvent these. If this seems too invasive, follow your child on social media. This allows you to monitor activity and see who your child is friends with without actively going into your child's social media accounts. More significantly, you may verify that your child's account is private and that their profiles do not reveal personal information. While you won't know if your child is receiving malicious messages privately, you will be able to observe how others are interacting with your child online", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

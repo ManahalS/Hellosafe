@@ -20,7 +20,7 @@ fun MassiveButton(
     Spacer(modifier = Modifier.height(5.dp))
     Button(
         onClick = onClick,
-        modifier = Modifier.size(width = 350.dp, height = 200.dp)) {
-        Text(text, fontSize = 25.sp, textAlign = TextAlign.Center)
+        modifier = Modifier.size(width = 350.dp, height = 180.dp)) {
+        Text(text, fontSize = 20.sp, textAlign = TextAlign.Center)
     }
 }

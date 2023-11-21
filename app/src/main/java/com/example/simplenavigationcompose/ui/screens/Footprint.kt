@@ -36,7 +36,7 @@ fun FootprintScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Digital Footprint", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("DIGITAL FOOTPRINT", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
         Text("Digital footprint is the data that an individual creates through their online activities. There are two types of digital footprints: \n" +
@@ -45,7 +45,7 @@ fun FootprintScreen(
                 "\n" +
                 "Passive digital footprints: This is data that a person leaves behind on the internet unintentionally. Such as search history an online purchases. This data is collected without consent. \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
         Spacer(modifier = Modifier.height(20.dp))
 
         DefaultButton(

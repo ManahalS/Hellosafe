@@ -33,11 +33,12 @@ fun Spending2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("statistics", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Statistics", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("A new survey of 2,000 UK parents commissioned by Internet Matters found some 43% of parents are concerned about their children spending money online in games and apps, and as many as one in eight (12%) of four and five year-olds have spent money online.", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("A new survey of 2,000 UK parents commissioned by Internet Matters found some 43% of parents are concerned about their children spending money online in games and apps, and as many as one in eight (12%) of four and five year-olds have spent money online.", fontSize = 20.sp, textAlign = TextAlign.Center)
 
+        Spacer(modifier = Modifier.height(20.dp))
 
         BackButton(
             text = "Back",

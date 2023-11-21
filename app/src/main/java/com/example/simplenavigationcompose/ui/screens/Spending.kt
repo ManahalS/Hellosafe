@@ -37,14 +37,14 @@ fun SpendingScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Online spending", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("ONLINE SPENDING", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(5.dp))
-        Text("Online spending is spending real money on either digital or physical items, such as buying clothes online that you can physically possess, or buying ingame currencies like V-Bucks (Fortnite) which have no physical counterpart. Almost everyone has bought something online before, especially when this is more convenient than going to the shops, as the range of things you can buy is almost endless and it is all available at a mere search and click of the 'buy' button. For busy adults, or anyone really, this is a very useful thing, as it means you can buy anything you need with ease without having to go yourself, and have it arrive at your door. The issue arises when children gain access to this. There are many cases of children accidentally spending their parents' credit cards because they do not understand the concept of real life money vs in game currency, and it is all too easy for children to be able to do this. Most games, such as Genshin Impact pictured below, are marketed towards children yet almost always have in-game purchases available. If the child's device has a card linked, then it is very easy for them to simply buy whatever they want without realising consequences.", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("Online spending is spending real money on either digital or physical items, such as buying clothes online that you can physically possess, or buying ingame currencies like V-Bucks (Fortnite) which have no physical counterpart. Almost everyone has bought something online before, especially when this is more convenient than going to the shops, as the range of things you can buy is almost endless and it is all available at a mere search and click of the 'buy' button. For busy adults, or anyone really, this is a very useful thing, as it means you can buy anything you need with ease without having to go yourself, and have it arrive at your door. The issue arises when children gain access to this. There are many cases of children accidentally spending their parents' credit cards because they do not understand the concept of real life money vs in game currency, and it is all too easy for children to be able to do this. Most games, such as Genshin Impact pictured below, are marketed towards children yet almost always have in-game purchases available. If the child's device has a card linked, then it is very easy for them to simply buy whatever they want without realising consequences.", fontSize = 20.sp, textAlign = TextAlign.Center)
         Spacer(modifier = Modifier.height(20.dp))
 
         DefaultButton(
-            text = "statistics",
+            text = "Statistics",
             onClick = {navigateToSpending2(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
@@ -55,11 +55,6 @@ fun SpendingScreen(
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
-            text = "?? add something",
-            onClick = { navigateToSpending4(1,true)}
-        )
-        Spacer(modifier = Modifier.height(10.dp))
 
         BackButton(
             text = "Back",

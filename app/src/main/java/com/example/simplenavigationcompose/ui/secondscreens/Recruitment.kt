@@ -39,23 +39,23 @@ fun RecruitmentScreen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("recruitment by extremist and terrorist groups", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Recruitment by extremist and terrorist groups", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("Online radicalization is defined  as a process in which individuals are exposed to, copy, and absorb extremist beliefs and attitudes via the Internet, particularly social media and other kinds of online communication. Such  individuals are considered as being more likely to commit transgressions that may take the form of violence, causing harm and death to many, as in violent acts of terrorism.", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Text("Online radicalization is defined  as a process in which individuals are exposed to, copy, and absorb extremist beliefs and attitudes via the Internet, particularly social media and other kinds of online communication. Such  individuals are considered as being more likely to commit transgressions that may take the form of violence, causing harm and death to many, as in violent acts of terrorism.", fontSize = 20.sp, textAlign = TextAlign.Center)
 
         BigButton(
-            text = "how can an individual be exposed to etxemist or terrorist ideologies",
+            text = "How can an individual be exposed to extremist or terrorist ideologies",
             onClick = { navigateToRecruitment2(1,true)}
         )
 
         BigButton(
-            text = "what to do if your child has had their beliefs changed by an extremist or terrorist organisation",
+            text = "What to do if your child has had their beliefs changed by an extremist or terrorist organisation",
             onClick = { navigateToRecruitment3(1,true)}
         )
 
         BigButton(
-            text = "how can you stop the spread of extremist ideologies",
+            text = "How can you stop the spread of extremist ideologies",
             onClick = { navigateToRecruitment4(1,true)}
         )
 

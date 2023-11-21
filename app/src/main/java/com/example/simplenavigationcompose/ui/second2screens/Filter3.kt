@@ -33,12 +33,12 @@ fun Filter3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Search engine filtration", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Search engine filtration", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("search engine filtration allows you to control user activities without the need for any VPNs or client-side software. When these filters are enabled, search engines will only return results that are in line with what you want. Inappropriate content that has not been explicitly restricted by you but is deemed harmful by the filter organization may also be blocked. However, it is important to remember that this is not the same as URL filtration - if your child already knows the URL of a website that is not specifically blocked may still be able to access it without having to use a search engine. \n" +
+        Text("Search engine filtration allows you to control user activities without the need for any VPNs or client-side software. When these filters are enabled, search engines will only return results that are in line with what you want. Inappropriate content that has not been explicitly restricted by you but is deemed harmful by the filter organization may also be blocked. However, it is important to remember that this is not the same as URL filtration - if your child already knows the URL of a website that is not specifically blocked may still be able to access it without having to use a search engine. \n" +
                 "\n" +
-                "Browser extensions/web portals like Funamo, MM Guardian and Securly work using search engine filtration, which whittles down someone's search options to whatever the manager allows them to see. They attach to a browser and block any content via firewalls and mass block lists, ie blocking anything that is registered as sexual content, or games. ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "Browser extensions/web portals like Funamo, MM Guardian and Securly work using search engine filtration, which whittles down someone's search options to whatever the manager allows them to see. They attach to a browser and block any content via firewalls and mass block lists, ie blocking anything that is registered as sexual content, or games. ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

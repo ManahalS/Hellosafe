@@ -33,7 +33,7 @@ fun Cyberbullying3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how to spot the signs of your child being cyberbullied", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How to spot the signs of your child being cyberbullied", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Many children that are cyberbullied don't want to tell a trusted adult (such as a parent or teacher) as they fear that their devices could be taken away from them. Therefore, it is important to look out for obvious signs that your child may be being cyberbullied. Some of the more visible signs include:\n" +
@@ -57,7 +57,7 @@ fun Cyberbullying3Screen(
                 "Suddenly wanting to stop using the computer or device\n" +
                 "\n" +
                 "\n" +
-                "However, it's important to remember that not all of these are signs of cyberbullying and could be something different, or nothing at all. Just remember to keep an eye on your children and not jump to false conclusions as these may unnecessarily upset or irritate your child.", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "However, it's important to remember that not all of these are signs of cyberbullying and could be something different, or nothing at all. Just remember to keep an eye on your children and not jump to false conclusions as these may unnecessarily upset or irritate your child.", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

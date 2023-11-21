@@ -33,7 +33,7 @@ fun Peer3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("teach your child to stand up to peer pressure", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Keeping your child safe from peer pressure", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Make sure that they know they can say \" no\"\n" +
@@ -42,7 +42,7 @@ fun Peer3Screen(
                 "\n" +
                 "Tell them to report dangerous and anti-social behaviour online\n" +
                 "\n" +
-                "Make sure they think twice before doing something\n", fontSize = 35.sp, textAlign = TextAlign.Center)
+                "Make sure they think twice before doing something\n", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

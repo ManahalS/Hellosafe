@@ -33,7 +33,7 @@ fun Peer4Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how to prevent your child from succumbing to peer pressure", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How to prevent your child from succumbing to peer pressure", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("There are many instances in which your child may find their ability to stand up for themselves lessened. Using alcohol and drugs increases their chance of giving in to peer pressure as their judgement is impaired meaning they might not make good decisions. \n" +
@@ -44,7 +44,7 @@ fun Peer4Screen(
                 "\n" +
                 "However, you should also explain to your child that their peers also have a positive influence on them and that they should listen and learn from others around them. Their peers can be a positive example for them and a role model. \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

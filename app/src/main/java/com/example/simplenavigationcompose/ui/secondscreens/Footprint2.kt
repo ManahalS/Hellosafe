@@ -33,12 +33,19 @@ fun Footprint2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("The importance of a digital footprint", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("The importance of a digital footprint", fontSize = 40.sp, textAlign = TextAlign.Center)
 
-        Spacer(modifier = Modifier.height(20.dp))
-        Text("A digital footprint is permanent and when their data goes public, it is very hard to control how the data is used and who sees it. Your data is visible to: advertisers, internet providers, employers, hackers, and the people around you/ your peers. The oversharing of your information online can make you vulnerable to hackers. They can steal your identity, and access your accounts, such as bank accounts and email accounts which are confidential and very important. Stores etc. use your online activity and search history to give you targeted advertisements. They use behavioral targeting to show items and other things that they know you will like. This can sometimes encourage a habit of online spending and shopping. As future employers can also see your digital footprint online it is very important to be careful of what you post and like etc. Employers might be able to judge you based on your online activity, meaning that sometimes they might make the decision to not hire you. \n" +
-                "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("A digital footprint is permanent and when their data goes public, it is very hard to control how the data is used and who sees it. Your data is visible to: advertisers, internet providers, employers, hackers, and the people around you/ your peers.  \n", fontSize = 20.sp, textAlign = TextAlign.Center)
+
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("Oversharing of your information online, can make you vulnerable to hackers. They can steal your identity, and access your accounts, such as bank accounts and email accounts which are confidential and very important. ",fontSize=20.sp,textAlign=TextAlign.Center)
+
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("Stores etc. use your online activity and search history to give you targeted advertisements. They use behavioural targeting to show items and other things that they know you will like. This can sometimes encourage a habit of online spending and shopping. \n",fontSize=20.sp,textAlign=TextAlign.Center)
+
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("As future employers can also see your digital footprint online it is very important to be careful of what you post, like etc. Employers might be able to judge you based on your online activity, meaning that sometimes they might make the decision to not hire you. ",fontSize=20.sp,textAlign=TextAlign.Center)
 
 
         BackButton(

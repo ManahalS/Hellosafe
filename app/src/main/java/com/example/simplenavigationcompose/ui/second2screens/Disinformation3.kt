@@ -33,7 +33,7 @@ fun Disinformation3Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Trustable news outlets for kids", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("Trustable news outlets for children", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Some trustable news outlets made for children include: \n" +
@@ -42,7 +42,7 @@ fun Disinformation3Screen(
                 "\n" +
                 "The Week Junior - this is an amazing magazine full of facts and information which is not biased, allowing children to think for themselves and make their own opinions about world events. \n" +
                 "\n" +
-                " ", fontSize = 35.sp, textAlign = TextAlign.Center)
+                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
         BackButton(

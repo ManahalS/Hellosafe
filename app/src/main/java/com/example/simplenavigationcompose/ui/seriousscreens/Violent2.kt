@@ -33,20 +33,20 @@ fun Violent2Screen(
         horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("how to prevent your children from seeing violent content", fontSize = 60.sp, textAlign = TextAlign.Center)
+        Text("How to prevent your children from seeing violent content", fontSize = 60.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("one way to prevent your child from seeing violent content is via installing content filters that prevent your child from accessing anything that's upsetting or inappropriate. check out our page on content filters to find out how.\n" +
+        Text("One way to prevent your child from seeing violent content is via installing content filters that prevent your child from accessing anything that's upsetting or inappropriate. check out our page on content filters to find out how.\n" +
                 "\n" +
-                "however, with some apps, it may not always be possible to download content filters that can filter out inappropriate content. one way is to download the child - friendly version of that app - for example, YouTube kids or Netflix kids. in most cases though, it's important to be aware of the shows and games your children watch and play. especially in the case of younger children, make sure to watch what your children are watching - know what they're viewing and discuss it with them. where possible, for younger children, keep televisions and devices out of your children's bedrooms as it diminished your ability to monitor them in there. be especially careful of viewing just before bedtime as motion-invoking images may linger and intrude into sleep. describe the effects of exposure to violence. what parent hasn't heard the justification \"but there's no blood\" when their child wants to watch a movie or play a video game? emphasize the real costs of violence and highlight how improbable it is for someone to get away with acting violently. pay attention to the time. don't expose them to virtual violence for too long. their exposure to violent material has a higher impact and influence the longer they are exposed to it.\n" +
+                "However, with some apps, it may not always be possible to download content filters that can filter out inappropriate content. one way is to download the child - friendly version of that app - for example, YouTube kids or Netflix kids. in most cases though, it's important to be aware of the shows and games your children watch and play. especially in the case of younger children, make sure to watch what your children are watching - know what they're viewing and discuss it with them. where possible, for younger children, keep televisions and devices out of your children's bedrooms as it diminished your ability to monitor them in there. be especially careful of viewing just before bedtime as motion-invoking images may linger and intrude into sleep. describe the effects of exposure to violence. what parent hasn't heard the justification \"but there's no blood\" when their child wants to watch a movie or play a video game? emphasize the real costs of violence and highlight how improbable it is for someone to get away with acting violently. pay attention to the time. don't expose them to virtual violence for too long. their exposure to violent material has a higher impact and influence the longer they are exposed to it.\n" +
                 "\n" +
-                "children from two to four frequently witness cartoon violence. however, keep kids away from anything that uses physical force to resolve disputes since they will emulate what they see.\n" +
+                "Children from two to four frequently witness cartoon violence. however, keep kids away from anything that uses physical force to resolve disputes since they will emulate what they see.\n" +
                 "\n" +
-                "cartoon rough-and-tumble and fantasy violence are ok for children aged 5 to 7, but violence that could cause death or serious injury is too frightful.\n" +
+                "Cartoon rough-and-tumble and fantasy violence are ok for children aged 5 to 7, but violence that could cause death or serious injury is too frightful.\n" +
                 "\n" +
-                "action-hero sword combat or gunplay is ok for children aged between the ages of 8 and 10 as long as there is no blood.\n" +
+                "Action-hero sword combat or gunplay is ok for children aged between the ages of 8 and 10 as long as there is no blood.\n" +
                 "\n" +
-                "historical action, such as battles, fantasy conflicts, and duels, is acceptable for 11 to 12-year-olds. close-ups of blood or graphic violence, whether they are shown separately or in conjunction with sexual settings or racial stereotypes, are not advised.\n" +
+                "Historical action, such as battles, fantasy conflicts, and duels, is acceptable for 11 to 12-year-olds. close-ups of blood or graphic violence, whether they are shown separately or in conjunction with sexual settings or racial stereotypes, are not advised.\n" +
                 "\n" +
                 "\n" +
                 "\n", fontSize = 35.sp, textAlign = TextAlign.Center)
