@@ -49,7 +49,7 @@ fun RecruitmentScreen(
             onClick = { navigateToRecruitment2(1,true)}
         )
 
-        BigButton(
+        BiggestButton(
             text = "What to do if your child has had their beliefs changed by an extremist or terrorist organisation",
             onClick = { navigateToRecruitment3(1,true)}
         )
