@@ -59,7 +59,7 @@ fun ProfileScreen(
         Spacer(modifier = Modifier.height(10.dp))
 
         BigButton(
-            text = "How to confront a child you may suspect is being cyberbullied",
+            text = "How to approach a child you may suspect is being cyberbullied",
             onClick = { navigateToCyberbullying4(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
