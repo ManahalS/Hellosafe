@@ -39,6 +39,7 @@ fun HomeScreen(
             .fillMaxWidth()
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally) {
+
         Spacer(modifier = Modifier.height(15.dp))
 
         Text("How can we help you today?", fontSize = 30.sp)

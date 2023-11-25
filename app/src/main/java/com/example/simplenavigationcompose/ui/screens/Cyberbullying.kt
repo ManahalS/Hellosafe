@@ -9,14 +9,12 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,8 +23,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
-
-
+import com.example.simplenavigationcompose.ui.theme.darkest_blue
+import com.example.simplenavigationcompose.ui.theme.next_lightest
+import com.example.simplenavigationcompose.ui.theme.white
 
 
 @Composable
@@ -39,9 +38,9 @@ fun AAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Cyberbullying - homepage",textAlign = TextAlign.Center)
+                Text("Cyberbullying",textAlign = TextAlign.Right)
             },
-            backgroundColor =  MaterialTheme.colors.primarySurface,
+            backgroundColor =  next_lightest,
             navigationIcon = {
                 IconButton(onClick = popBackStack) {
                     Icon(Icons.Filled.ArrowBack, null)
@@ -124,13 +123,14 @@ fun ProfileScreen(
     }
 }
 
-@Preview(showBackground = true, backgroundColor = 0xFFBB2020)
+@Preview(showBackground = true)
 @Composable
 private fun DefaultPreview() {
     SimpleNavComposeAppTheme(useSystemUiController = true) {
         Surface(
             modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
+            color = darkest_blue,
+            contentColor = white
         ) {
 
             AAppBarSample (

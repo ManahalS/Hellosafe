@@ -16,7 +16,6 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,6 +24,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+import com.example.simplenavigationcompose.ui.theme.next_lightest
+
 @Composable
 fun SAppBarSample(
     popBackStack: () -> Unit,
@@ -37,7 +38,7 @@ fun SAppBarSample(
             title = {
                 Text("Prevent children from seeing violent content",textAlign = TextAlign.Center)
             },
-            backgroundColor =  MaterialTheme.colors.primarySurface,
+            backgroundColor =  next_lightest,
             navigationIcon = {
                 IconButton(onClick = popBackStack) {
                     Icon(Icons.Filled.ArrowBack, null)

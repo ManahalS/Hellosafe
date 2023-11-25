@@ -16,7 +16,6 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -26,6 +25,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.common.BiggestButton
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+import com.example.simplenavigationcompose.ui.theme.next_lightest
+
 @Composable
 fun xAppBarSample(
     popBackStack: () -> Unit,
@@ -38,7 +39,7 @@ fun xAppBarSample(
             title = {
                 Text("Recruitment by extremist groups",textAlign = TextAlign.Center)
             },
-            backgroundColor =  MaterialTheme.colors.primarySurface,
+            backgroundColor =  next_lightest,
             navigationIcon = {
                 IconButton(onClick = popBackStack) {
                     Icon(Icons.Filled.ArrowBack, null)

@@ -25,6 +25,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+import com.example.simplenavigationcompose.ui.theme.next_lightest
 
 @Composable
 fun aAppBarSample(
@@ -38,7 +39,7 @@ fun aAppBarSample(
             title = {
                 Text("Spot signs of cyberbullying",textAlign = TextAlign.Center)
             },
-            backgroundColor =  MaterialTheme.colors.primarySurface,
+            backgroundColor =  next_lightest,
             navigationIcon = {
                 IconButton(onClick = popBackStack) {
                     Icon(Icons.Filled.ArrowBack, null)

@@ -8,18 +8,19 @@ import androidx.compose.runtime.Composable
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
-    primary = blue,
+    primary = third_lightest,
     primaryVariant = darkest_blue,
-    secondary = black,
-    onBackground = darkest_blue
+    secondary = lightest,
+    background = darkest_blue,
+    surface = darkest_blue
 
 )
 
 private val LightColorPalette = lightColors(
-    primary = blue,
+    primary = third_lightest,
     primaryVariant = darkest_blue,
     secondary = lightest,
-    onBackground = darkest_blue,
+    background = darkest_blue,
     surface = darkest_blue
     /* Other default colors to override
 
@@ -46,10 +47,10 @@ fun SimpleNavComposeAppTheme(
     if (useSystemUiController) {
         val systemUiController = rememberSystemUiController()
         systemUiController.setStatusBarColor(
-            color = colors.primaryVariant
+            color = lightest
         )
         systemUiController.setNavigationBarColor(
-            color = colors.primaryVariant
+            color = next_lightest
         )
     }
 
