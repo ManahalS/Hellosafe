@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -17,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+import com.example.simplenavigationcompose.ui.theme.darkest_blue
 
 @Composable
 fun HomeScreen(
@@ -121,7 +121,7 @@ private fun DefaultPreview() {
     SimpleNavComposeAppTheme(useSystemUiController = false) {
         Surface(
             modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
+            color = darkest_blue,
         ) {
             HomeScreen(
                 navigateToProfile = { _, _ -> },

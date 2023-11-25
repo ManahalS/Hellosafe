@@ -88,7 +88,7 @@ fun ProfileScreen(
 @Preview(showBackground = true)
 @Composable
 private fun DefaultPreview() {
-    SimpleNavComposeAppTheme(useSystemUiController = false) {
+    SimpleNavComposeAppTheme(useSystemUiController = true) {
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colors.background
