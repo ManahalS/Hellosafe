@@ -51,7 +51,7 @@ fun DisinformationScreen(
                 "\n" +
                 "1. Fake news that is deliberately published to make people believe untrue things.\n" +
                 "\n" +
-                "2.News and stories that may be partly true but some of the information might be exaggerated or untrue.",fontSize=20.sp,textAlign=TextAlign.Left)
+                "2.News and stories that may be partly true but some of the information might be exaggerated or untrue.",fontSize=20.sp,textAlign=TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
 
