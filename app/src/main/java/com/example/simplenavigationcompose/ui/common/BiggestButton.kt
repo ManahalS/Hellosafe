@@ -1,4 +1,4 @@
-package com.example.simplenavigationcompose.ui.screens
+package com.example.simplenavigationcompose.ui.common
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -20,7 +20,7 @@ fun BiggestButton(
     Spacer(modifier = Modifier.height(5.dp))
     Button(
         onClick = onClick,
-        modifier = Modifier.size(width = 350.dp, height = 120.dp,)) {
-        Text(text, fontSize = 20.sp, textAlign = TextAlign.Center);
+        modifier = Modifier.size(width = 350.dp, height = 120.dp)) {
+        Text(text, fontSize = 20.sp, textAlign = TextAlign.Center)
     }
 }
