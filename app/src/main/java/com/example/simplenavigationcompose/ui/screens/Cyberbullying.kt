@@ -83,7 +83,6 @@ fun ProfileScreen(
         TopAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
         }
 
-
         Spacer(modifier = Modifier.height(20.dp))
 
         Text("CYBERBULLYING", fontSize = 40.sp, textAlign = TextAlign.Center)
