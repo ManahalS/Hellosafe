@@ -7,9 +7,16 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,7 +25,31 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+@Composable
+fun uAppBarSample(
+    popBackStack: () -> Unit,
+    popUpToHome: () -> Unit,
+    function: () -> Unit,
+){
+    Column {
+        TopAppBar(
+            elevation = 4.dp,
+            title = {
+                Text("Dangerous online friendships",textAlign = TextAlign.Center)
+            },
+            backgroundColor =  MaterialTheme.colors.primarySurface,
+            navigationIcon = {
+                IconButton(onClick = popBackStack) {
+                    Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = popUpToHome) {
+                    Icon(Icons.Filled.Home, null)
+                }
+            })
 
+    }
+}
 @Composable
 fun Friendships2Screen(
     id: Int,
@@ -31,6 +62,8 @@ fun Friendships2Screen(
             .fillMaxWidth()
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally) {
+        uAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
+        }
         Spacer(modifier = Modifier.height(20.dp))
 
         Text("How to prevent dangerous online friendships from forming", fontSize = 40.sp, textAlign = TextAlign.Center)
@@ -43,15 +76,6 @@ fun Friendships2Screen(
                 "In today's world, being connected is a crucial aspect. If you are playing a team game, you need to be able to communicate with your team. This should be monitored by the game itself if it is a child-friendly game, and should not be a cause of grand concern. However, outside of communicating about activities, your child should not be talking about themselves outside of games and the online world as this can be dangerous and leak personal information. This is why it is important to monitor online chatting, as it is very easy to talk to people you do not know, but also because you should see what your child is saying to people they know too, to monitor bullying or other malicious activity from other children they know, or adults they do not.  ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
-        BackButton(
-            text = "Back",
-            onClick = popBackStack
-        )
-
-        HomeButton(
-            text = "Home",
-            onClick = popUpToHome
-        )
         Spacer(modifier = Modifier.height(10.dp))
 
     }
@@ -65,6 +89,11 @@ private fun DefaultPreview() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colors.background
         ) {
+            uAppBarSample (
+                popBackStack = {},
+                popUpToHome = {},
+            ) {
+            }
             Friendships2Screen(
                 id = 1,
                 showDetails = true,

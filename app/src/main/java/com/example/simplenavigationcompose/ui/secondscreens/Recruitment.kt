@@ -7,9 +7,16 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -19,7 +26,31 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.common.BiggestButton
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+@Composable
+fun xAppBarSample(
+    popBackStack: () -> Unit,
+    popUpToHome: () -> Unit,
+    function: () -> Unit,
+){
+    Column {
+        TopAppBar(
+            elevation = 4.dp,
+            title = {
+                Text("Recruitment by extremist groups",textAlign = TextAlign.Center)
+            },
+            backgroundColor =  MaterialTheme.colors.primarySurface,
+            navigationIcon = {
+                IconButton(onClick = popBackStack) {
+                    Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = popUpToHome) {
+                    Icon(Icons.Filled.Home, null)
+                }
+            })
 
+    }
+}
 @Composable
 fun RecruitmentScreen(
     id: Int,
@@ -38,6 +69,8 @@ fun RecruitmentScreen(
             .fillMaxWidth()
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally) {
+        xAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
+        }
         Spacer(modifier = Modifier.height(20.dp))
 
         Text("Recruitment by extremist and terrorist groups", fontSize = 40.sp, textAlign = TextAlign.Center)
@@ -60,15 +93,6 @@ fun RecruitmentScreen(
             onClick = { navigateToRecruitment4(1,true)}
         )
 
-        BackButton(
-            text = "Back",
-            onClick = popBackStack
-        )
-
-        HomeButton(
-            text = "Home",
-            onClick = popUpToHome
-        )
         Spacer(modifier = Modifier.height(10.dp))
 
     }
@@ -78,10 +102,16 @@ fun RecruitmentScreen(
 @Composable
 private fun DefaultPreview() {
     SimpleNavComposeAppTheme(useSystemUiController = false) {
+
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colors.background
         ) {
+            xAppBarSample (
+                popBackStack = {},
+                popUpToHome = {},
+            ) {
+            }
             RecruitmentScreen(
                 id = 1,
                 showDetails = true,

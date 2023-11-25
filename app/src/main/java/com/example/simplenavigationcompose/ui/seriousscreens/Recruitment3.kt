@@ -7,9 +7,16 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,7 +25,31 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+@Composable
+fun QAppBarSample(
+    popBackStack: () -> Unit,
+    popUpToHome: () -> Unit,
+    function: () -> Unit,
+){
+    Column {
+        TopAppBar(
+            elevation = 4.dp,
+            title = {
+                Text("What to do about extremism",textAlign = TextAlign.Center)
+            },
+            backgroundColor =  MaterialTheme.colors.primarySurface,
+            navigationIcon = {
+                IconButton(onClick = popBackStack) {
+                    Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = popUpToHome) {
+                    Icon(Icons.Filled.Home, null)
+                }
+            })
 
+    }
+}
 @Composable
 fun Recruitment3Screen(
     id: Int,
@@ -31,6 +62,8 @@ fun Recruitment3Screen(
             .fillMaxWidth()
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally) {
+        QAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
+        }
         Spacer(modifier = Modifier.height(20.dp))
 
         Text("What to do if your child has had their beliefs changed by an extremist or terrorist organisation", fontSize = 60.sp, textAlign = TextAlign.Center)
@@ -59,15 +92,6 @@ fun Recruitment3Screen(
                 "Tell the police immediately if you think your child is about to put themselves or others in immediate danger, or appears to be involved in planning to carry out a criminal offence", fontSize = 35.sp, textAlign = TextAlign.Center)
 
 
-        BackButton(
-            text = "Back",
-            onClick = popBackStack
-        )
-
-        HomeButton(
-            text = "Home",
-            onClick = popUpToHome
-        )
         Spacer(modifier = Modifier.height(10.dp))
 
     }
@@ -81,6 +105,11 @@ private fun DefaultPreview() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colors.background
         ) {
+            QAppBarSample (
+                popBackStack = {},
+                popUpToHome = {},
+            ) {
+            }
             Recruitment3Screen(
                 id = 1,
                 showDetails = true,

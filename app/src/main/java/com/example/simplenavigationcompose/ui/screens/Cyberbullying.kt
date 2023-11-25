@@ -30,7 +30,7 @@ import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 
 
 @Composable
-fun TopAppBarSample(
+fun AAppBarSample(
     popBackStack: () -> Unit,
     popUpToHome: () -> Unit,
     function: () -> Unit,
@@ -39,7 +39,7 @@ fun TopAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Cyberbullying",textAlign = TextAlign.Center)
+                Text("Cyberbullying - homepage",textAlign = TextAlign.Center)
             },
             backgroundColor =  MaterialTheme.colors.primarySurface,
             navigationIcon = {
@@ -80,7 +80,7 @@ fun ProfileScreen(
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally) {
         
-        TopAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
+        AAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
         }
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -118,15 +118,7 @@ fun ProfileScreen(
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        BackButton(
-            text = "Back",
-            onClick = popBackStack
-        )
 
-        HomeButton(
-            text = "Home",
-            onClick = popUpToHome
-        )
         Spacer(modifier = Modifier.height(10.dp))
 
     }
@@ -141,7 +133,7 @@ private fun DefaultPreview() {
             color = MaterialTheme.colors.background
         ) {
 
-            TopAppBarSample (
+            AAppBarSample (
                 popBackStack = {},
                 popUpToHome = {},
             ) {

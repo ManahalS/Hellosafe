@@ -7,9 +7,16 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,7 +25,31 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+@Composable
+fun sAppBarSample(
+    popBackStack: () -> Unit,
+    popUpToHome: () -> Unit,
+    function: () -> Unit,
+){
+    Column {
+        TopAppBar(
+            elevation = 4.dp,
+            title = {
+                Text("Client-side filtration",textAlign = TextAlign.Center)
+            },
+            backgroundColor =  MaterialTheme.colors.primarySurface,
+            navigationIcon = {
+                IconButton(onClick = popBackStack) {
+                    Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = popUpToHome) {
+                    Icon(Icons.Filled.Home, null)
+                }
+            })
 
+    }
+}
 @Composable
 fun Filter2Screen(
     id: Int,
@@ -31,9 +62,11 @@ fun Filter2Screen(
             .fillMaxWidth()
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally) {
+        sAppBarSample(popBackStack =  popBackStack, popUpToHome = popUpToHome) {
+        }
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text("Client side filteration", fontSize = 40.sp, textAlign = TextAlign.Center)
+        Text("Client side filtration", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
         Text("Client-side filtration involves downloading software onto the your child's system. This means that your child will, most likely, not be able to modify or uninstall the software (which is achieved by password-protecting the program). By restricting the things your child is allowed to do (e.g. blocking websites or applications), you can rest assured that your child will not be able to bypass its restrictions, making these filters well-suited for home usage as they are personalized and easy to manage. You can use processes such as blacklisting and content flagging to ensure your child's safety. Most software allow you to log web activity and can send you an alert in case your child attempts to visit a black-listed site and more. Some content filters even allow you to determine the amount of time your child spends on certain apps or websites, and permits you to set time limits. \n" +
@@ -49,15 +82,6 @@ fun Filter2Screen(
                 " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
 
-        BackButton(
-            text = "Back",
-            onClick = popBackStack
-        )
-
-        HomeButton(
-            text = "Home",
-            onClick = popUpToHome
-        )
         Spacer(modifier = Modifier.height(10.dp))
 
     }
@@ -71,6 +95,11 @@ private fun DefaultPreview() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colors.background
         ) {
+            sAppBarSample (
+                popBackStack = {},
+                popUpToHome = {},
+            ) {
+            }
             Filter2Screen(
                 id = 1,
                 showDetails = true,
