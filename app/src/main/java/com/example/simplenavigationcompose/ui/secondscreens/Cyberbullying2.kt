@@ -9,7 +9,6 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
@@ -24,6 +23,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
+import com.example.simplenavigationcompose.ui.theme.darkest_blue
 import com.example.simplenavigationcompose.ui.theme.next_lightest
 
 @Composable
@@ -36,7 +36,7 @@ fun pAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Cyberbullying - homepage",textAlign = TextAlign.Center)
+                Text("    Examples of Cyberbullying",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {
@@ -95,7 +95,7 @@ private fun DefaultPreview() {
     SimpleNavComposeAppTheme(useSystemUiController = false) {
         Surface(
             modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
+            color = darkest_blue
         ) {
             pAppBarSample (
                 popBackStack = {},

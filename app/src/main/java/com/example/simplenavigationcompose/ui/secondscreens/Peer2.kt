@@ -36,7 +36,7 @@ fun wAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Giving in to peer pressure",textAlign = TextAlign.Center)
+                Text("    Giving in to peer pressure",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

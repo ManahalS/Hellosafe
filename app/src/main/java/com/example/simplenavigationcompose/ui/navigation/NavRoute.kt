@@ -2,6 +2,8 @@ package com.example.simplenavigationcompose.ui.navigation
 
 sealed class NavRoute(val path: String) {
 
+    object Verify: NavRoute("verify")
+
     object Home: NavRoute("home")
 
     object Profile: NavRoute("profile") {

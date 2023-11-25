@@ -36,7 +36,7 @@ fun TAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Violent content - what to do?",textAlign = TextAlign.Center)
+                Text(" Violent content - what to do?",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

@@ -37,7 +37,7 @@ fun DAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Digital footprint",textAlign = TextAlign.Center)
+                Text("            Digital footprint",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

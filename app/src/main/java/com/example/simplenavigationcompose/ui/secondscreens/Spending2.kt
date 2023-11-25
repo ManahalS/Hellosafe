@@ -36,7 +36,7 @@ fun yAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Spending statistics",textAlign = TextAlign.Center)
+                Text("       Spending statistics",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

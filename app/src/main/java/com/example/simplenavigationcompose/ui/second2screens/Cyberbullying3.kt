@@ -16,7 +16,6 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.primarySurface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -37,7 +36,7 @@ fun aAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Spot signs of cyberbullying",textAlign = TextAlign.Center)
+                Text("  Spot signs of cyberbullying",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

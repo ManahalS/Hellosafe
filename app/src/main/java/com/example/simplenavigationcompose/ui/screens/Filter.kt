@@ -37,7 +37,7 @@ fun CAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Setting content filters",textAlign = TextAlign.Center)
+                Text("       Setting content filters",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

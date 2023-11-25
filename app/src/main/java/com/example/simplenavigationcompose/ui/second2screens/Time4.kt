@@ -36,7 +36,7 @@ fun oAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Monitor screen time",textAlign = TextAlign.Center)
+                Text("  How to monitor screen time",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

@@ -36,7 +36,7 @@ fun sAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Client-side filtration",textAlign = TextAlign.Center)
+                Text("         Client-side filtration",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

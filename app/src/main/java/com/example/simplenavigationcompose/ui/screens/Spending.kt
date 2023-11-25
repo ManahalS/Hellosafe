@@ -37,7 +37,7 @@ fun IAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Online spending",textAlign = TextAlign.Center)
+                Text("            Online spending",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

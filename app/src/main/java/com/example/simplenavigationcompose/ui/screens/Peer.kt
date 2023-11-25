@@ -37,7 +37,7 @@ fun FAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Peer pressure",textAlign = TextAlign.Center)
+                Text("              Peer pressure",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

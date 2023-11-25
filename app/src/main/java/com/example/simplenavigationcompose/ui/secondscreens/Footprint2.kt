@@ -36,7 +36,7 @@ fun tAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Digital footprint importance",textAlign = TextAlign.Center)
+                Text(" The importance of a digital footprint",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

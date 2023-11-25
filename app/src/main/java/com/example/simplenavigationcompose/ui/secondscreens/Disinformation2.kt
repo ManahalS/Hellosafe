@@ -36,7 +36,7 @@ fun qAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Spot fake news",textAlign = TextAlign.Center)
+                Text("             Spot fake news",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

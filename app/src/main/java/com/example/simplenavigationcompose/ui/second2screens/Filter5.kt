@@ -36,7 +36,7 @@ fun gAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Search engines for children",textAlign = TextAlign.Center)
+                Text("    Search engines for children",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

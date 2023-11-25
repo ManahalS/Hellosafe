@@ -36,7 +36,7 @@ fun mAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Cyberbullying - homepage",textAlign = TextAlign.Center)
+                Text("literally an empty page! how did you get here??",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

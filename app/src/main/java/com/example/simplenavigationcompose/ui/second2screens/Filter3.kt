@@ -36,7 +36,7 @@ fun eAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Search engine filtration",textAlign = TextAlign.Center)
+                Text("      Search engine filtration",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

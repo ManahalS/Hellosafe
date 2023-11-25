@@ -36,7 +36,7 @@ fun OAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Help out your child",textAlign = TextAlign.Center)
+                Text("    Help out your child",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

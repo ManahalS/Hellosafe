@@ -36,7 +36,7 @@ fun bAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Confront a cyberbullied child",textAlign = TextAlign.Center)
+                Text(" Confront a cyberbullied child",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

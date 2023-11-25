@@ -36,7 +36,7 @@ fun hAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Reduce your digital footprint",textAlign = TextAlign.Center)
+                Text("  Reduce your digital footprint",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

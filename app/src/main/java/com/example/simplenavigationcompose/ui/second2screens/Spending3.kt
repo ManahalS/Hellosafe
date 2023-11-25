@@ -36,7 +36,7 @@ fun lAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Is my child spending online?",textAlign = TextAlign.Center)
+                Text("   Is my child spending online?",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

@@ -37,7 +37,7 @@ fun GAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("More serious issues",textAlign = TextAlign.Center)
+                Text("        More serious issues",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

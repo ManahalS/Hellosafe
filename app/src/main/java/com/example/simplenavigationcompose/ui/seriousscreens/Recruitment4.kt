@@ -36,7 +36,7 @@ fun RAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Stop the spread of extremism",textAlign = TextAlign.Center)
+                Text("  Stop the spread of extremism",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

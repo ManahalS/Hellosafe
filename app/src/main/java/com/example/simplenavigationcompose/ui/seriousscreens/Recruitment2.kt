@@ -36,7 +36,7 @@ fun PAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("How does extremism spread",textAlign = TextAlign.Center)
+                Text("  How does extremism spread",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

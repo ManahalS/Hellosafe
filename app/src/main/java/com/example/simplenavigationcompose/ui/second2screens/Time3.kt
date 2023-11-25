@@ -36,7 +36,7 @@ fun nAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Reduce screen time",textAlign = TextAlign.Center)
+                Text("  How to reduce screen time",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

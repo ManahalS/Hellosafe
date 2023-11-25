@@ -36,7 +36,7 @@ fun dAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Trustable news outlets",textAlign = TextAlign.Center)
+                Text("       Trustable news outlets",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

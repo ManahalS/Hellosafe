@@ -38,7 +38,7 @@ fun AAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Cyberbullying",textAlign = TextAlign.Right)
+                Text("               Cyberbullying",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

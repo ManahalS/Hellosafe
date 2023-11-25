@@ -36,7 +36,7 @@ fun kAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Succumbing to peer pressure",textAlign = TextAlign.Center)
+                Text(" Succumbing to peer pressure",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

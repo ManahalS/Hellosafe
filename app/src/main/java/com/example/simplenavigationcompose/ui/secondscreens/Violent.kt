@@ -36,7 +36,7 @@ fun JAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Violent content",textAlign = TextAlign.Center)
+                Text("           Violent content",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

@@ -13,8 +13,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen(
-            )
+            MainScreen()
         }
     }
 }
@@ -26,8 +25,5 @@ private fun MainScreen() {
         NavGraph(navController)
     }
 }
-
-
-
 
 

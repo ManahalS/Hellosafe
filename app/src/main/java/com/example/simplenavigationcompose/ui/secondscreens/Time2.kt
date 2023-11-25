@@ -36,7 +36,7 @@ fun zAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Screen time dangers",textAlign = TextAlign.Center)
+                Text("      Screen time dangers",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

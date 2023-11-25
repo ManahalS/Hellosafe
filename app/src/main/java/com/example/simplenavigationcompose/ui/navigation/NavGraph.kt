@@ -51,6 +51,7 @@ import com.example.simplenavigationcompose.ui.screens.Time2Screen
 import com.example.simplenavigationcompose.ui.screens.Time3Screen
 import com.example.simplenavigationcompose.ui.screens.Time4Screen
 import com.example.simplenavigationcompose.ui.screens.TimeScreen
+import com.example.simplenavigationcompose.ui.screens.VerifyScreen
 import com.example.simplenavigationcompose.ui.screens.Violent2Screen
 import com.example.simplenavigationcompose.ui.screens.Violent3Screen
 import com.example.simplenavigationcompose.ui.screens.ViolentScreen
@@ -63,9 +64,10 @@ fun NavGraph(navController: NavHostController) {
 
     NavHost(
         navController = navController,
-        startDestination = NavRoute.Home.path
+        startDestination = NavRoute.Verify.path
     ) {
         addHomeScreen(navController, this)
+        addVerifyScreen(navController, this)
         addProfileScreen(navController, this)
         addSearchScreen(navController, this)
 
@@ -125,6 +127,7 @@ fun NavGraph(navController: NavHostController) {
 
 
 
+
 private fun addHomeScreen(
     navController: NavHostController,
     navGraphBuilder: NavGraphBuilder
@@ -167,6 +170,24 @@ private fun addHomeScreen(
 private fun popUpToHome(navController: NavHostController) {
     navController.popBackStack(NavRoute.Home.path, inclusive = false) }
 
+
+
+private fun addVerifyScreen(
+    navController: NavHostController,
+    navGraphBuilder: NavGraphBuilder
+) {
+    navGraphBuilder.composable(
+        route = NavRoute.Verify.withArgsFormat(),
+        arguments = listOf()
+    ) { navBackStackEntry ->
+        val args = navBackStackEntry.arguments
+        VerifyScreen(
+            navigateToHome= { ->
+                navController.navigate(NavRoute.Home.withArgs())
+            },
+        )
+    }
+}
 
 
 private fun addProfileScreen(

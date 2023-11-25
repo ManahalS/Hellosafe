@@ -36,7 +36,7 @@ fun uAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Dangerous online friendships",textAlign = TextAlign.Center)
+                Text("   Dangerous online friendships",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

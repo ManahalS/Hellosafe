@@ -36,7 +36,7 @@ fun HAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Screen time",textAlign = TextAlign.Center)
+                Text("               Screen time",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

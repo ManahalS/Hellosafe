@@ -36,7 +36,7 @@ fun fAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("Not-recommended types of filtration",textAlign = TextAlign.Center)
+                Text("  Not-recommended types of filtration",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {

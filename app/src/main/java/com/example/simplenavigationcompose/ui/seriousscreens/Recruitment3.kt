@@ -36,7 +36,7 @@ fun QAppBarSample(
         TopAppBar(
             elevation = 4.dp,
             title = {
-                Text("What to do about extremism",textAlign = TextAlign.Center)
+                Text("   What to do about extremism",textAlign = TextAlign.Center)
             },
             backgroundColor =  next_lightest,
             navigationIcon = {
