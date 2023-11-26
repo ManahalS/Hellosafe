@@ -12,9 +12,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.simplenavigationcompose.ui.common.HyperlinkText
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 import com.example.simplenavigationcompose.ui.theme.darkest_blue
 
@@ -101,13 +105,26 @@ fun HomeScreen(
             text = "Screen Time",
             onClick = {navigateToTime(1,true)}
         )
-        Spacer(modifier = Modifier.height(10.dp))
+        Spacer(modifier = Modifier.height(25.dp))
 
-        MassiveButton(
-            text = "If you have any queries, Childline is available 24/7 at: 0800 1111.  For urgent matters, please contact the authorities. ",
-            onClick = {}
+
+        HyperlinkText(
+            fullText =
+            " If you have any queries, Childline is available 24/7 at: 0800 1111.  For urgent matters, please contact the authorities.",
+            hyperLinks = mutableMapOf(
+                "Childline" to "https://www.childline.org.uk/",
+                "0800 1111" to "tel://08001111",
+            ),
+
+            textStyle = TextStyle(
+                textAlign = TextAlign.Center,
+                color = Color.Black
+            ),
+            linkTextColor = Color.Blue,
+            fontSize = 16.sp
         )
-        Spacer(modifier = Modifier.height(10.dp))
+
+        Spacer(modifier = Modifier.height(15.dp))
 
 
 

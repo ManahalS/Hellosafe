@@ -19,10 +19,14 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.Black
+import androidx.compose.ui.graphics.Color.Companion.Blue
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.simplenavigationcompose.ui.common.HyperlinkText
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 import com.example.simplenavigationcompose.ui.theme.next_lightest
 
@@ -71,10 +75,22 @@ fun Filter5Screen(
         Text("Pre-prepared search engines for children", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("Some search engines offer filters that are oriented towards kids. These providers' search results are pre-filtered to guarantee that they are appropriate for children. Such content filters are advantageous because they can allow your children to browse the internet without supervision while keeping them away from websites known to contain harmful or unsuitable information. \n" +
-                "\n" +
-                "Pre-prepared search engines for children, such as Kiddle and Wackysafe, are specialised search engine filters and target their firewalls at blocking content that is not appropriate for children. ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
+        HyperlinkText(
+            fullText = "Some search engines offer filters that are oriented towards kids. These providers' search results are pre-filtered to guarantee that they are appropriate for children. Such content filters are advantageous because they can allow your children to browse the internet without supervision while keeping them away from websites known to contain harmful or unsuitable information. \n" +
+                    "\n" +
+                    "Pre-prepared search engines for children, such as Kiddle and Wackysafe, are specialised search engine filters and target their firewalls at blocking content that is not appropriate for children. ",
+            hyperLinks = mutableMapOf(
+                "Kiddle" to "https://www.kiddle.co/",
+                "Wackysafe" to "https://wackysafe.com/"
+            ),
+            textStyle = TextStyle(
+                textAlign = TextAlign.Center,
+                color = Black
+            ),
+            linkTextColor = Blue,
+            fontSize = 18.sp
+        )
 
         Spacer(modifier = Modifier.height(10.dp))
 

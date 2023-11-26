@@ -19,10 +19,13 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.simplenavigationcompose.ui.common.HyperlinkText
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 import com.example.simplenavigationcompose.ui.theme.next_lightest
 
@@ -71,14 +74,28 @@ fun Disinformation3Screen(
         Text("Trustable news outlets for children", fontSize = 40.sp, textAlign = TextAlign.Center)
 
         Spacer(modifier = Modifier.height(20.dp))
-        Text("Some trustable news outlets made for children include: \n" +
-                "\n" +
-                "Newsround, a childrens section of BBC news. They also have they own article on how to spot fake news which can be great to give your child to read. \n" +
-                "\n" +
-                "The Week Junior - this is an amazing magazine full of facts and information which is not biased, allowing children to think for themselves and make their own opinions about world events. \n" +
-                "\n" +
-                " ", fontSize = 20.sp, textAlign = TextAlign.Center)
 
+        HyperlinkText(
+            fullText =
+            "Some trustable news outlets made for children include: \n" +
+                    "\n" +
+                    "Newsround, a childrens section of BBC news. They also have they own article on how to spot fake news which can be great to give your child to read. \n" +
+                    "\n" +
+                    "The Week Junior - this is an amazing magazine full of facts and information which is not biased, allowing children to think for themselves and make their own opinions about world events. \n" +
+                    "\n" +
+                    " ",
+            hyperLinks = mutableMapOf(
+                "Newsround" to "https://www.bbc.co.uk/newsround",
+                "The Week Junior" to "https://theweekjunior.co.uk/",
+            ),
+            
+            textStyle = TextStyle(
+                textAlign = TextAlign.Center,
+                color = Color.Black
+            ),
+            linkTextColor = Color.Blue,
+            fontSize = 18.sp
+        )
 
         Spacer(modifier = Modifier.height(10.dp))
 
