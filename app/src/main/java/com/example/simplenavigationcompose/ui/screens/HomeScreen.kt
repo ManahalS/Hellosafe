@@ -18,7 +18,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.simplenavigationcompose.ui.common.AIconButton
+import com.example.simplenavigationcompose.ui.common.BIconButton
+import com.example.simplenavigationcompose.ui.common.CIconButton
+import com.example.simplenavigationcompose.ui.common.DIconButton
+import com.example.simplenavigationcompose.ui.common.EIconButton
+import com.example.simplenavigationcompose.ui.common.FIconButton
+import com.example.simplenavigationcompose.ui.common.GIconButton
+import com.example.simplenavigationcompose.ui.common.HIconButton
 import com.example.simplenavigationcompose.ui.common.HyperlinkText
+import com.example.simplenavigationcompose.ui.common.IIconButton
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 import com.example.simplenavigationcompose.ui.theme.darkest_blue
 
@@ -50,50 +59,50 @@ fun HomeScreen(
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        AIconButton(
             text = "Cyberbullying",
             onClick = { navigateToProfile(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        BIconButton(
             text = "Online Friendships",
             onClick = { navigateToSearch("hellosafe")}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        CIconButton(
             text = "Disinformation",
             onClick = {navigateToDisinformation(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        DIconButton(
             text = "Content filters",
             onClick = {navigateToFilter(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        EIconButton(
             text = "Digital Footprint",
             onClick = {navigateToFootprint(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        FIconButton(
             text = "Peer Pressure",
             onClick = { navigateToPeer(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        GIconButton(
             text = "Serious Issues",
             onClick = { navigateToSerious(1,true)}
         )
         Spacer(modifier = Modifier.height(10.dp))
 
 
-        DefaultButton(
+        HIconButton(
             text = "Online Spending",
             onClick = {navigateToSpending(1,true)}
 
@@ -101,7 +110,7 @@ fun HomeScreen(
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        DefaultButton(
+        IIconButton(
             text = "Screen Time",
             onClick = {navigateToTime(1,true)}
         )
