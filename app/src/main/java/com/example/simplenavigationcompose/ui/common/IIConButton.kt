@@ -8,7 +8,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
@@ -31,7 +31,7 @@ fun IIconButton(
         Spacer(modifier = Modifier.width(30.dp))
 
         Icon(
-            Icons.Filled.PlayArrow,
+            Icons.Rounded.PlayArrow,
             contentDescription = "Search",
             tint = lightest,
             modifier = Modifier.size(50.dp)

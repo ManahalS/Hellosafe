@@ -8,7 +8,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ShoppingCart
+import androidx.compose.material.icons.rounded.ShoppingCart
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
@@ -31,7 +31,7 @@ fun HIconButton(
         Spacer(modifier = Modifier.width(30.dp))
 
         Icon(
-            Icons.Filled.ShoppingCart,
+            Icons.Rounded.ShoppingCart,
             contentDescription = "Search",
             tint = lightest,
             modifier = Modifier.size(50.dp)
