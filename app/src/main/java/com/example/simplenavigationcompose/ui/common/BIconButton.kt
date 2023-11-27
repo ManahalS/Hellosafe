@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.simplenavigationcompose.ui.theme.lightest
+import com.example.simplenavigationcompose.ui.theme.white
 
 
 @Composable
@@ -34,7 +34,7 @@ fun BIconButton(
         Icon(
             Icons.Rounded.FavoriteBorder,
             contentDescription = "Search",
-            tint = lightest,
+            tint = white,
             modifier = Modifier.size(50.dp)
         )
 
