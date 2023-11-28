@@ -34,7 +34,6 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.simplenavigationcompose.ui.screens.GAppBarSample
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 import com.example.simplenavigationcompose.ui.theme.next_lightest
 import kotlinx.coroutines.FlowPreview
@@ -153,7 +152,7 @@ fun FindScreen(
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        GAppBarSample(popBackStack = popBackStack, popUpToHome = popUpToHome) {
+        ZAppBarSample(popBackStack = popBackStack, popUpToHome = popUpToHome) {
         }
 
         Spacer(modifier = Modifier.height(20.dp))

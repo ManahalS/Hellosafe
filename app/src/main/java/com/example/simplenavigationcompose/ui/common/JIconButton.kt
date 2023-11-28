@@ -8,7 +8,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.AddCircle
+import androidx.compose.material.icons.rounded.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
@@ -18,7 +18,7 @@ import com.example.simplenavigationcompose.ui.theme.white
 
 
 @Composable
-fun EIconButton(
+fun JIconButton(
     text: String,
     onClick: () -> Unit
 ) {
@@ -31,7 +31,7 @@ fun EIconButton(
         Spacer(modifier = Modifier.width(30.dp))
 
         Icon(
-            Icons.Rounded.AddCircle,
+            Icons.Rounded.Search,
             contentDescription = "Search",
             tint = white,
             modifier = Modifier.size(50.dp)

@@ -47,6 +47,7 @@ import com.example.simplenavigationcompose.ui.screens.Spending2Screen
 import com.example.simplenavigationcompose.ui.screens.Spending3Screen
 import com.example.simplenavigationcompose.ui.screens.Spending4Screen
 import com.example.simplenavigationcompose.ui.screens.SpendingScreen
+import com.example.simplenavigationcompose.ui.screens.SuggestionScreen
 import com.example.simplenavigationcompose.ui.screens.Time2Screen
 import com.example.simplenavigationcompose.ui.screens.Time3Screen
 import com.example.simplenavigationcompose.ui.screens.Time4Screen
@@ -93,6 +94,7 @@ fun NavGraph(navController: NavHostController) {
         addViolentScreen(navController, this)
         addTime2Screen(navController, this)
 
+        addSuggestionScreen(navController, this)
 
 
         addCyberbullying3Screen(navController, this)
@@ -167,6 +169,8 @@ private fun addHomeScreen(
             },
             navigateToFind = {navController.navigate(NavRoute.Find.withArgs())
             },
+            navigateToSuggestion = {navController.navigate(NavRoute.Suggestion.withArgs())
+            },
         )
     }
 }
@@ -188,6 +192,23 @@ private fun addVerifyScreen(
             navigateToHome= { ->
                 navController.navigate(NavRoute.Home.withArgs())
             },
+        )
+    }
+}
+
+
+private fun addSuggestionScreen(
+    navController: NavHostController,
+    navGraphBuilder: NavGraphBuilder
+) {
+    navGraphBuilder.composable(
+        route = NavRoute.Suggestion.withArgsFormat(),
+        arguments = listOf()
+    ) { navBackStackEntry ->
+        val args = navBackStackEntry.arguments
+        SuggestionScreen(
+            popBackStack = { navController.popBackStack() },
+            popUpToHome= { popUpToHome(navController) },
         )
     }
 }

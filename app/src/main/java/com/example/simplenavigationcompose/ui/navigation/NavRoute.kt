@@ -6,6 +6,9 @@ sealed class NavRoute(val path: String) {
 
     object Find: NavRoute("find")
 
+    object Suggestion: NavRoute("suggestion")
+
+
 
     object Home: NavRoute("home")
 

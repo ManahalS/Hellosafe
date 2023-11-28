@@ -28,6 +28,8 @@ import com.example.simplenavigationcompose.ui.common.GIconButton
 import com.example.simplenavigationcompose.ui.common.HIconButton
 import com.example.simplenavigationcompose.ui.common.HyperlinkText
 import com.example.simplenavigationcompose.ui.common.IIconButton
+import com.example.simplenavigationcompose.ui.common.JIconButton
+import com.example.simplenavigationcompose.ui.common.KIconButton
 import com.example.simplenavigationcompose.ui.theme.SimpleNavComposeAppTheme
 import com.example.simplenavigationcompose.ui.theme.darkest_blue
 
@@ -38,6 +40,8 @@ fun HomeScreen(
     popBackStack: () -> Unit,
     popUpToHome: () -> Unit,
     navigateToFind: () -> Unit,
+    navigateToSuggestion: () -> Unit,
+
 
     navigateToDisinformation: (Int, Boolean) -> Unit,
     navigateToFilter: (Int, Boolean) -> Unit,
@@ -117,10 +121,19 @@ fun HomeScreen(
         )
         Spacer(modifier = Modifier.height(10.dp))
 
-        BIconButton(
+        JIconButton(
             text = "Search",
             onClick = {navigateToFind()}
         )
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+
+        KIconButton(
+            text = "Suggestions",
+            onClick = {navigateToSuggestion()}
+        )
+
 
 
         Spacer(modifier = Modifier.height(25.dp))
@@ -171,7 +184,8 @@ private fun DefaultPreview() {
                 navigateToPeer = { _, _ -> },
                 navigateToSerious = { _, _ -> },
                 navigateToSpending = { _, _ -> },
-                navigateToTime = { _, _ -> }
+                navigateToTime = { _, _ -> },
+                navigateToSuggestion = { }
             )
         }
     }
