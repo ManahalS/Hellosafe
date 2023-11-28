@@ -37,6 +37,7 @@ fun HomeScreen(
     navigateToSearch: (String) -> Unit,
     popBackStack: () -> Unit,
     popUpToHome: () -> Unit,
+    navigateToFind: () -> Unit,
 
     navigateToDisinformation: (Int, Boolean) -> Unit,
     navigateToFilter: (Int, Boolean) -> Unit,
@@ -114,6 +115,14 @@ fun HomeScreen(
             text = "Screen Time",
             onClick = {navigateToTime(1,true)}
         )
+        Spacer(modifier = Modifier.height(10.dp))
+
+        BIconButton(
+            text = "Search",
+            onClick = {navigateToFind()}
+        )
+
+
         Spacer(modifier = Modifier.height(25.dp))
 
 
@@ -153,6 +162,7 @@ private fun DefaultPreview() {
             HomeScreen(
                 navigateToProfile = { _, _ -> },
                 navigateToSearch = {},
+                navigateToFind = {},
                 popBackStack = {},
                 popUpToHome = {},
                 navigateToDisinformation = { _, _ -> },

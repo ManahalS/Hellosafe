@@ -55,8 +55,7 @@ import com.example.simplenavigationcompose.ui.screens.VerifyScreen
 import com.example.simplenavigationcompose.ui.screens.Violent2Screen
 import com.example.simplenavigationcompose.ui.screens.Violent3Screen
 import com.example.simplenavigationcompose.ui.screens.ViolentScreen
-
-
+import com.plcoding.searchfieldcompose.FindScreen
 
 
 @Composable
@@ -69,6 +68,8 @@ fun NavGraph(navController: NavHostController) {
         addHomeScreen(navController, this)
         addVerifyScreen(navController, this)
         addProfileScreen(navController, this)
+        addFindScreen(navController, this)
+
         addSearchScreen(navController, this)
 
         addDisinformationScreen(navController, this)
@@ -164,6 +165,8 @@ private fun addHomeScreen(
             navigateToTime = { id, showDetails ->
                 navController.navigate(NavRoute.Time.withArgs(id.toString(), showDetails.toString()))
             },
+            navigateToFind = {navController.navigate(NavRoute.Find.withArgs())
+            },
         )
     }
 }
@@ -185,6 +188,23 @@ private fun addVerifyScreen(
             navigateToHome= { ->
                 navController.navigate(NavRoute.Home.withArgs())
             },
+        )
+    }
+}
+
+
+private fun addFindScreen(
+    navController: NavHostController,
+    navGraphBuilder: NavGraphBuilder
+) {
+    navGraphBuilder.composable(
+        route = NavRoute.Find.withArgsFormat(),
+        arguments = listOf()
+    ) { navBackStackEntry ->
+        val args = navBackStackEntry.arguments
+        FindScreen(
+            popBackStack = { navController.popBackStack() },
+            popUpToHome= { popUpToHome(navController) },
         )
     }
 }

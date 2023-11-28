@@ -4,6 +4,9 @@ sealed class NavRoute(val path: String) {
 
     object Verify: NavRoute("verify")
 
+    object Find: NavRoute("find")
+
+
     object Home: NavRoute("home")
 
     object Profile: NavRoute("profile") {
